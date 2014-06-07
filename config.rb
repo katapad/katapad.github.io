@@ -103,7 +103,7 @@ activate :deploy do |deploy|
   deploy.method = :git
   # Optional Settings
   # deploy.remote = "custom-remote" # remote name or git url, default: origin
-  deploy.branch = "master" # default: gh-pages
+  deploy.branch = "gh-pages" # default: gh-pages
 
   # ftp
   # deploy.method   = :ftp
