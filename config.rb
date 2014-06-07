@@ -72,6 +72,12 @@ set :images_dir, 'img'
 # livereload your browser, Firefox/Google Chrome/Safari
 activate :livereload
 
+
+# blog
+activate :blog do |blog|
+  # ブログ機能のオプションを設定
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -103,7 +109,7 @@ activate :deploy do |deploy|
   deploy.method = :git
   # Optional Settings
   # deploy.remote = "custom-remote" # remote name or git url, default: origin
-  deploy.branch = "gh-pages" # default: gh-pages
+  # deploy.branch = "gh-pages" # default: gh-pages
 
   # ftp
   # deploy.method   = :ftp
