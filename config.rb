@@ -28,8 +28,6 @@ Slim::Engine.set_default_options :shortcut => {
 # bower.js settings
 set :bower_dir, '../vendor/bower'
 
-# activate :directory_indexes
-#
 # activate :gzip
 
 # Per-page layout changes:
@@ -74,9 +72,16 @@ activate :livereload
 
 
 # blog
+Time.zone = 'Tokyo'
+
 activate :blog do |blog|
   # ブログ機能のオプションを設定
+  blog.sources = "posts/:year-:month-:day-:title.html"
+  blog.permalink = ":year/:month/:title.html"
+  blog.default_extension = ".md"
 end
+activate :directory_indexes
+page "/feed.xml", :layout => false
 
 # Build-specific configuration
 configure :build do
