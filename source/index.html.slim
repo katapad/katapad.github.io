@@ -5,10 +5,11 @@ per_page: 10
 
 ul.posts
   - page_articles.each_with_index do |article, i|
-    li
-      == link_to article.title, article
-      /.meta
-      /  == time_tag article.date
+    li.post
+      .post__title
+        == link_to article.title, article
+        /.meta
+        /  == time_tag article.date
 - if paginate
   ul.pager
     li.newer

@@ -1,0 +1,24 @@
+@import ../lib/color
+
+.post
+
+.post__title
+  font-size: 250%
+  font-weight: normal
+  font-family: "ヒラギノ明朝 Pro W3","Hiragino Mincho Pro", "ＭＳ Ｐ明朝","MS PMincho", serif
+  margin-bottom: 25px
+  color: $assort_color
+  line-height: 1.25
+  word-wrap: break-word
+
+  //トラッキング用
+  span
+    letter-spacing: -0.13em
+    &.kigou
+      letter-spacing: -0.23em
+
+
+  a
+    color: inherit
+    &:hover
+      background: rgba(255, 255, 255, 0.1)
