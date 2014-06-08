@@ -91,8 +91,25 @@ set :css_dir, 'css'
 set :js_dir, 'js'
 set :images_dir, 'img'
 
+
+
+# Compass
+
+compass_config do |config|
+  # config.output_style = :compact
+  config.additional_import_paths = ['source/css/lib']
+  config.environment = :development
+end
+
 # Build-specific configuration
 configure :build do
+
+  compass_config do |config|
+    config.output_style = :compressed
+    config.line_comments = false
+    config.environment = :production
+  end
+
   activate :minify_css
   activate :minify_javascript
   activate :cache_buster
