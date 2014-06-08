@@ -91,6 +91,12 @@ set :css_dir, 'css'
 set :js_dir, 'js'
 set :images_dir, 'img'
 
+#Syntax
+activate :syntax, :line_numbers => true
+
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
+
 
 
 # Compass
