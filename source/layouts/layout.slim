@@ -23,7 +23,7 @@ html class="no-js" lang="ja"
   body class="#{page_classes}"
     #wrapper
       == partial 'partials/header'
-      #content
+      main#content role='main'
         == yield
       == partial 'partials/footer'
 

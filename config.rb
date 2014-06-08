@@ -23,7 +23,7 @@ activate :blog do |blog|
   # Matcher for blog source files
   blog.sources = "posts/{year}-{month}-{day}-{title}.html"
   # blog.taglink = "tags/{tag}.html"
-  # blog.layout = "layout"
+  blog.layout = "layouts/post"
   blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.year_link = "{year}.html"
@@ -46,10 +46,11 @@ page "/feed.xml", layout: false
 # Compass
 ###
 
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
+compass_config do |config|
+  # config.output_style = :compact
+  config.additional_import_paths = ['source/css/lib']
+  config.environment = :development
+end
 
 ###
 # Page options, layouts, aliases and proxies
@@ -99,13 +100,6 @@ set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 
 
-# Compass
-
-compass_config do |config|
-  # config.output_style = :compact
-  config.additional_import_paths = ['source/css/lib']
-  config.environment = :development
-end
 
 # Build-specific configuration
 configure :build do
