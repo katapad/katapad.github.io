@@ -12,7 +12,9 @@ body
   margin: auto
   padding-bottom: 100px
 
-header.globalHeader
+.globalHeader
+  text-align: center
+  margin-bottom: 5em
   h1
     margin-bottom: 12px
 
@@ -20,4 +22,27 @@ header.globalHeader
     font-weight: normal
     font-size: 0.75em
 
-  margin-bottom: 3em
+
+
+
+.globalFooter
+  margin-top: 4em
+
+  .author
+    .author__img
+      float: left
+
+
+
+/////* 479px以下用（スマートフォン用）の記述 */
+//@media screen and (max-width: 479px)
+@media screen and (max-width: 767px)
+
+  #wrapper
+    width: 100%
+    padding: 10%  5%  5%
+
+  .globalHeader
+    .globalHeader__logo img
+      width: 80%
+
