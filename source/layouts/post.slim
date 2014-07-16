@@ -1,7 +1,11 @@
 = wrap_layout :layout do
-  article.post
-    header.post__title
-      h1
-        = current_article.title
+  article.post.post--article
+    header.post__header
+      .post__meta
+        = current_article.date.strftime('%Y-%m-%d')
+      .post__title
+        h1
+          = current_article.title
+
     .entry
       == yield
