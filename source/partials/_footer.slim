@@ -1,18 +1,23 @@
 footer.globalFooter
   .author
     .author__img
-      a href="http://twitter.com/katapad" target="_blank"
-        == image_tag "layout/profile.png", :alt => '', :width => 120
+      == image_tag "layout/profile.png", :alt => '', :width => 120
     .author__desc
-      | スーパー肩パッド 32歳。罪深き開発者。担当:フロントエンド全部。
+      | スーパー肩パッド。Yoshio Kakehashi。1981。<br>罪深き開発者。<br>担当:フロントエンド全部。
 
     .author__accounts
       ul
-        li
+        li.author__accountsItem
           == link_to 'http://twitter.com/katapad', :target=> '_blank'
-            img alt="" height="27" src="img/twitter_icon.png" width="27" /
+            span.fa-stack.fa-lg
+              i.fa.fa-circle.fa-stack-2x
+              i.fa.fa-twitter.fa-stack-1x.fa-inverse
 
-        li
-          == link_to 'github', 'https://github.com/katapad', :target=> '_blank'
+
+        li.author__accountsItem
+          == link_to 'https://github.com/katapad', :target=> '_blank'
+            span.fa-stack.fa-lg
+              i.fa.fa-circle.fa-stack-2x
+              i.fa.fa-github.fa-stack-1x.fa-inverse
 
 

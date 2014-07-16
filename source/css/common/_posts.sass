@@ -2,6 +2,16 @@
 
 .post
 
+  a
+    color: inherit
+    &:hover
+      background: rgba(255, 255, 255, 0.1)
+
+  .post__meta
+    color: $assort_color
+    font-family: serif
+
+
   .post__title
     font-size: 250%
     font-weight: normal
@@ -18,10 +28,7 @@
         letter-spacing: -0.23em
 
 
-    a
-      color: inherit
-      &:hover
-        background: rgba(255, 255, 255, 0.1)
+
 
 .entry
   h2, h3

@@ -28,11 +28,35 @@ body
 .globalFooter
   margin-top: 4em
 
-  .author
-    .author__img
-      float: left
+.author
+  text-align: center
 
-
+  .author__img
+    width: 120px
+    height: 120px
+    margin: 3em auto 0.3em
+    img
+      border-radius: 80px
+  .author__desc
+    line-height: 1.4
+    font-size: 0.8em
+    margin: 1em
+    text-shadow: 0 0 4px #000
+  .author__accounts
+    span
+      .fa-circle
+        color: $assort_color !important
+      &:hover
+        .fa-circle
+          color: $font-color !important
+        .fa-inverse
+          color: $assort_color !important
+    ul
+      display: table
+      margin: auto
+    .author__accountsItem
+      display: table-cell
+      padding: 0 0.2em
 
 /////* 479px以下用（スマートフォン用）の記述 */
 //@media screen and (max-width: 479px)
