@@ -10,6 +10,12 @@ tags: jade
 
 ## jadeのFilterを使うとmarkdownやless, coffeescriptなどを解釈できる
 
+```ruby
+def my_cool_method(message)
+  puts message
+end
+```
+
 標準では以下が使えるようになっている。
 
 * `:stylus`
@@ -34,10 +40,12 @@ jade側では
         
 と、書くと出力がこんな感じに。
 
-	<div id="mdBlock">
-		<h1>markdownで見出し1</h1>
-		<p>文章を書きますね。書いてますよ。書いてるんです。書いてるでしょ？書いてるんです！</p>
-	</div>	
+```html
+<div id="mdBlock">
+	<h1>markdownで見出し1</h1>
+	<p>文章を書きますね。書いてますよ。書いてるんです。書いてるでしょ？書いてるんです！</p>
+</div>	
+```
 
 	
 これはうれしい。
@@ -45,17 +53,21 @@ jade側では
 ## coffeescriptもインライン展開できる
 
 jadeで
+
+```jade
+include /coffee/test.coffee
+```
 	  
-	  include /coffee/test.coffee
 	  
 こうすると、test.coffeeをコンパイルしたうえで、展開されてる
 
-	<script type="text/javascript">
-		(function () {
-			console.log('うんこ');
-		}).call(this);
-	</script>
-
+```html
+<script type="text/javascript">
+	(function () {
+		console.log('うんこ');
+	}).call(this);
+</script>
+```
 
 jsでPC/スマホ判定リダイレクトを入れるときとかに便利そうだ。
 
