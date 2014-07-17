@@ -18,7 +18,7 @@ line:
   text: *title
   link: *url
 fb:
-  app_id: '1234'
+  app_id: '200194620081622'
 og:
   locale: 'ja_JP'
   images: ['http://www.example.com/img/ogp.png']

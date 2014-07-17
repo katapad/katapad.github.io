@@ -2,6 +2,7 @@
 title: jadeでmarkdown記法を混ぜたり、coffeescriptを読み込ませたりして、超省力化しよう
 date: 2013-06-18
 tags: jade
+description: MarkdonwやCoffeeScriptはコンパイルしなくても、Jadeにつっこめます
 ---
 
 
