@@ -123,3 +123,21 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+
+# Deploy-specific configuration
+activate :deploy do |deploy|
+  deploy.build_before = true # default: false
+
+
+  # sftp
+  require 'json'
+  json = JSON.load(File.read('.ftppass'))
+  ftp = json['unko.me']
+
+  deploy.method   = :ftp
+  deploy.host     = ftp['host']
+  deploy.user     = ftp['user']
+  deploy.password = ftp['password']
+  deploy.path     = ftp['path']
+end

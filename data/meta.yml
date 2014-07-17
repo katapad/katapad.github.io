@@ -1,11 +1,11 @@
 url: &url
-  'http://www.example.com'
+  'http://kurokute-buttoi.unko.me'
 title: &title
-  'My Site Title'
+  '地獄の大開発者養成ブログ'
 description: &description
-  'My Site description'
+  '愛されて500年。安心と安全のunko.meがお送りする、クソブログです。黒くてぶっといクソブログです。'
 keywords: &keywords
-  'My Site keywords,keyword'
+  'うんこ,kuso,unko,ウンコ'
 
 twitter:
   lang: 'ja'
