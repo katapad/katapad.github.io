@@ -8,4 +8,12 @@
           = current_article.title
 
     .entry
-      == yield
+      .entry__main
+        == yield
+
+      .entry__share
+        .share
+          ul
+            li.twitter twitterにシェア
+            li.facebook Facebookでいいね
+

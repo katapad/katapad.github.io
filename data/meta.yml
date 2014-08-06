@@ -1,5 +1,5 @@
 url: &url
-  'http://kurokute-buttoi.unko.me'
+  'http://attaka-i.unko.me'
 title: &title
   '地獄の大開発者養成ブログ'
 description: &description
@@ -22,6 +22,7 @@ fb:
 og:
   locale: 'ja_JP'
   images: ['http://www.example.com/img/ogp.png']
+  image: 'http://attaka-i.unko.me/img/ogp/noyaki.jpg'
   url: *url
   title: *title
   site_name: *title

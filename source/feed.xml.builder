@@ -1,6 +1,6 @@
 xml.instruct!
 xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
-  site_url = "http://kurokute-buttoi.unko.me/"
+  site_url = "http://attaka-i.unko.me/"
   xml.title "地獄の大開発者養成ブログ"
   xml.subtitle "'愛されて500年。安心と安全のunko.meがお送りする、クソブログです。黒くてぶっといクソブログです。"
   xml.id URI.join(site_url, blog.options.prefix.to_s)

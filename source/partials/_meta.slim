@@ -13,6 +13,11 @@ meta property="og:title" content="#{current_article.title unless current_article
   meta name="description" content=data.meta.description
 
 meta property="og:site_name" content=data.meta.og.site_name
-- data.meta.og.images.each do |image|
-  meta property="og:image" content=image
+/- data.meta.og.images.each do |image|
+/  meta property="og:image" content=image
+- if current_page.data.image
+  meta property="og:image" content=current_page.data.image
+- else
+  meta property="og:image" content=data.meta.image
+
 meta property="fb:app_id" content=data.meta.fb.app_id

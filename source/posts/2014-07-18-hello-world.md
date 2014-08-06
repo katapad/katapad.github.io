@@ -1,11 +1,12 @@
 ---
-title: ブログを移転して、kurokute-buttoi.unko.meというところでがんばります！
+title: ブログを移転して、attaka-i.unko.meというところでがんばります！
 date: 2014-07-18
 tags: jade
 description: Github pagesでやりかけてましたが、やめました。
 ---
 
-## kurokute-buttoi.unko.me 
+## attaka-i.unko.me
+
 
 というサブドメインにしました。
 
