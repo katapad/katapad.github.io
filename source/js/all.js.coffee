@@ -27,7 +27,9 @@ do ->
   move = ->
     $('.share__title span').each(->
       $(@).velocity({scale: Math.random() * .5 + 1, rotateZ: Math.random() * 20 - 10}, {duration: 0})
-#      $(@).velocity({rotateZ: Math.random() * 40 - 20}, {duration: 0})
+    )
+    $('.share__item').each(->
+      $(@).velocity({scale: Math.random() * .5 + 0.8, rotateZ: Math.random() * 10 - 5}, {duration: 0})
     )
     setTimeout(move, 45)
 

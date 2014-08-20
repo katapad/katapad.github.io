@@ -141,6 +141,7 @@
 .entry__share
   margin-top: 3em
 .share
+  overflow: hidden
   .share__title
     color: $assort_color
     +display-flex()
@@ -183,5 +184,11 @@
 
       .fb_iframe_widget
         line-height: 1
+
+      &.share__item--twitter
+        +transform-origin(-202px 8px)
+
+      &.share__item--facebook
+        +transform-origin(30px 10px)
 
 
