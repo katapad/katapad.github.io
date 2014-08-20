@@ -1,8 +1,14 @@
+- if current_article
+  - url = data.meta.og.url + current_article.url
+- else
+  - url = data.meta.og.url
+
+
 meta name="keywords" content=data.meta.keywords
 
 meta property="og:type" content=data.meta.og.type
 meta property="og:locale" content="ja_JP"
-meta property="og:url" content=data.meta.og.url
+meta property="og:url" content=url
 meta property="og:title" content="#{current_article.title unless current_article.nil?} | #{data.meta.title}"
 
 - if current_page.data.description

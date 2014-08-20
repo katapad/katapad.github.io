@@ -141,3 +141,28 @@ activate :deploy do |deploy|
   deploy.password = ftp['password']
   deploy.path     = ftp['path']
 end
+
+
+
+activate :google_analytics do |ga|
+  # Property ID (default = nil)
+  ga.tracking_id = 'UA-12314579-3'
+
+  # Removing the last octet of the IP address (default = false)
+  ga.anonymize_ip = false
+
+  # Tracking across a domain and its subdomains (default = nil)
+  ga.domain_name = 'unko.me'
+
+  # Tracking across multiple domains and subdomains (default = false)
+  ga.allow_linker = false
+
+  # Tracking Code Debugger (default = false)
+  ga.debug = false
+
+  # Tracking in development environment (default = true)
+  ga.development = true
+
+  # Compress the JavaScript code (default = false)
+  ga.minify = false
+end

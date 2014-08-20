@@ -11,9 +11,14 @@
       .entry__main
         == yield
 
-      .entry__share
+      section.entry__share
         .share
-          ul
-            li.twitter twitterにシェア
-            li.facebook Facebookでいいね
+          h1.share__title share
+          ul.share__items
+            li.share__item.twitter
+              a href="https://twitter.com/share" class="twitter-share-button" data-hashtags="unko.me" Tweet
+
+            li.share__item.facebook
+              - url = data.meta.og.url + current_article.url
+              div.fb-like data-href="#{url}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"
 

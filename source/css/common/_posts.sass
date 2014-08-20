@@ -63,6 +63,8 @@
 
 /////* 479px以下用（スマートフォン用）の記述 */
 @media screen and (max-width: 767px)
+  #wrapper
+    padding: 10% 3%
   .globalHeader
     margin-bottom: 3em
   .post
@@ -75,7 +77,7 @@
         margin-top: 1em
       .entry
         background-color: rgba(0, 0, 0, 0.8)
-        //padding: 0
+        padding: 0.5em
         //border: none
         //border-radius: none
 
@@ -134,5 +136,46 @@
   .highlight
     background: #000000
     border: 1px solid #ccc
+
+
+.entry__share
+  margin-top: 3em
+
+.share__title
+  color: $assort_color
+  +display-flex()
+  +align-items(center)
+  //+justify-content(center)
+  +codefont()
+  line-height: 1
+  margin-bottom: 1.2em
+
+  &:before, &:after
+    padding: 0 1em
+    content: ''
+    display: inline
+    //+box-flex(1)
+    +flex-grow(1)
+    height: 0.2em
+    border-top: 2px solid $assort_color
+    position: relative
+    top: 0em
+  &:before
+    margin-right: 0.5em
+  &:after
+    margin-left: 0.5em
+
+.share__items
+  +display-flex()
+  +align-items(flex-start)
+  +justify-content(center)
+
+  .share__item
+    height: 30px
+    list-style: none
+    +flex-grow(1)
+
+    .fb_iframe_widget
+      line-height: 1
 
 
