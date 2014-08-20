@@ -98,8 +98,9 @@ activate :syntax, :line_numbers => true
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 
-
-
+activate :sprockets
+sprockets.append_path File.join root, 'bower_components'
+sprockets.import_asset 'jquery'
 
 # Build-specific configuration
 configure :build do

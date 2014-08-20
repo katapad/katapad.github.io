@@ -12,6 +12,7 @@
     "jquery.transit": "*",
     "d3": "*",
     "raphael": "*",
-    "jquery": "*"
+    "jquery": "*",
+    "velocity": "~0.11.7"
   }
 }

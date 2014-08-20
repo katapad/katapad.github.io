@@ -140,42 +140,48 @@
 
 .entry__share
   margin-top: 3em
+.share
+  .share__title
+    color: $assort_color
+    +display-flex()
+    +align-items(center)
+    //+justify-content(center)
+    +codefont()
+    line-height: 1
+    letter-spacing: 0.2em
+    margin-bottom: 1.2em
 
-.share__title
-  color: $assort_color
-  +display-flex()
-  +align-items(center)
-  //+justify-content(center)
-  +codefont()
-  line-height: 1
-  margin-bottom: 1.2em
+    &:before, &:after
+      padding: 0 1em
+      content: ''
+      display: inline
+      //+box-flex(1)
+      +flex-grow(1)
+      height: 0.2em
+      border-top: 2px solid $assort_color
+      position: relative
+      top: 0em
+    &:before
+      margin-right: 0.5em
+    &:after
+      margin-left: 0.5em
 
-  &:before, &:after
-    padding: 0 1em
-    content: ''
-    display: inline
-    //+box-flex(1)
-    +flex-grow(1)
-    height: 0.2em
-    border-top: 2px solid $assort_color
-    position: relative
-    top: 0em
-  &:before
-    margin-right: 0.5em
-  &:after
-    margin-left: 0.5em
+  .share__items
+    +display-flex()
+    +align-items(flex-start)
+    +justify-content(center)
 
-.share__items
-  +display-flex()
-  +align-items(flex-start)
-  +justify-content(center)
+    padding-bottom: 0.4em
+    width: 320px
+    margin: auto
 
-  .share__item
-    height: 30px
-    list-style: none
-    +flex-grow(1)
+    .share__item
+      height: 30px
+      margin-bottom: 0
+      list-style: none
+      +flex-grow(1)
 
-    .fb_iframe_widget
-      line-height: 1
+      .fb_iframe_widget
+        line-height: 1
 
 
