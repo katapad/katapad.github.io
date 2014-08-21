@@ -1,6 +1,6 @@
 ---
 title: ブログを移転して、attaka-i.unko.meというところでがんばります！
-date: 2014-07-18
+date: 2014-08-21
 tags: jade
 description: Github pagesでやりかけてましたが、やめました。
 ---
