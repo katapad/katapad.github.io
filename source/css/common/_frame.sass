@@ -58,6 +58,64 @@ body
       display: table-cell
       padding: 0 0.2em
 
+
+
+
+
+
+
+
+
+//svg
+=svgAnim($name, $beginFill, $endFill)
+  +keyframes($name)
+    0%
+      stroke-dashoffset: 500
+      //stroke-dasharray:  0
+      fill: $beginFill
+
+    70%
+      fill: $beginFill
+
+    100%
+      stroke-dashoffset: 0
+      //stroke-dasharray:  400
+      fill: $endFill
+
+=svgAnim2($name, $beginFill, $endFill)
+  +keyframes($name)
+    0%
+      fill: $beginFill
+    100%
+      fill: $endFill
+
+
++svgAnim(DASH, #100101, #9B1F24)
++svgAnim(DASH_DAI, #100101, #fff)
+.globalHeader
+  .globalHeader__logo
+    svg
+      //width: 376px
+      width: 576px
+    img
+
+    path
+      fill: none
+      stroke-width: 0.5
+      stroke-dasharray:  500
+      stroke-dashoffset: 500
+
+    $animTime: 2.2s
+    $delay: .5s
+    $ease: $easeInOutSine
+    .logo-svg-letter
+      +animation(DASH     $animTime ceaser($easeInOutCubic)  $delay 1 normal forwards)
+      stroke: #9B1F24
+    .logo-svg-dai
+      +animation(DASH_DAI $animTime ceaser($easeInOutCubic) $delay 1 normal forwards )
+      stroke: #fff
+
+
 /////* 479px以下用（スマートフォン用）の記述 */
 @media screen and (max-width: 767px)
 
@@ -66,6 +124,8 @@ body
     padding: 10%  5%  5%
 
   .globalHeader
-    .globalHeader__logo img
-      width: 98%
+    .globalHeader__logo
+      img, svg
+        width: 98% !important
+
 

@@ -8,6 +8,9 @@ Slim::Engine.set_default_options :shortcut => {
     '&' => {:tag => 'input', :attr => 'type'}
 }
 
+# require 'animation'
+require 'ceaser-easing'
+
 
 ###
 # Blog settings

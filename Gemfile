@@ -19,3 +19,7 @@ gem "middleman-syntax", "~> 2.0.0"
 gem "middleman-google-analytics", "~> 1.0.2"
 
 gem "redcarpet", "~> 3.1.2"
+
+gem "animation"
+gem "ceaser-easing"
+gem "oily_png"
